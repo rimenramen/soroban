@@ -97,7 +97,7 @@ input[type=number]{-moz-appearance:textfield}
             }
             
             // 13% chance to be negative (if allowed). We skip '-0' to keep outputs clean.
-            if (canBeNegative && Math.random() < 0.13 && numStr !== '0') {
+            if (canBeNegative && Math.random() < 0 && numStr !== '0') {
                 numStr = '-' + numStr;
             }
             
@@ -216,3 +216,4 @@ input[type=number]{-moz-appearance:textfield}
     </script>
 </body>
 </html>
+
